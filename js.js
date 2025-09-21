@@ -9,14 +9,14 @@ function AddTask() {
         li.innerHTML = box.value;
 
         let span = document.createElement("span");
-        span.innerHTML = "\u00D7"; // This is the '×' symbol
-        span.classList.add("close"); // Optional: Add a class for styling
+        span.innerHTML = "\u00D7"; // this is the '×' symbol
+        span.classList.add("close");
 
         li.appendChild(span);
         liste.appendChild(li);
         
     }
-    box.value = ''; // Clear the input box after adding the task
+    box.value = ''; // clear the input box after adding the task
     savedata();
 }
 
